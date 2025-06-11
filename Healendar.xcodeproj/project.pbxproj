@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		002863A92DEF5C07003659A3 /* PhotoEditorSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 002863A82DEF5C07003659A3 /* PhotoEditorSDK */; };
+		0063714D2DEC641D003AFABC /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 0063714C2DEC641D003AFABC /* FSCalendar */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		006371192DEC40DB003AFABC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 006370FE2DEC40DA003AFABC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 006371052DEC40DA003AFABC;
+			remoteInfo = Healendar;
+		};
+		006371232DEC40DB003AFABC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 006370FE2DEC40DA003AFABC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 006371052DEC40DA003AFABC;
+			remoteInfo = Healendar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		006371062DEC40DA003AFABC /* Healendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Healendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		006371182DEC40DB003AFABC /* HealendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		006371222DEC40DB003AFABC /* HealendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealendarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		006371372DEC4375003AFABC /* Exceptions for "Healendar" folder in "Healendar" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 006371052DEC40DA003AFABC /* Healendar */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		006371082DEC40DA003AFABC /* Healendar */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				006371372DEC4375003AFABC /* Exceptions for "Healendar" folder in "Healendar" target */,
+			);
+			path = Healendar;
+			sourceTree = "<group>";
+		};
+		0063711B2DEC40DB003AFABC /* HealendarTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = HealendarTests;
+			sourceTree = "<group>";
+		};
+		006371252DEC40DB003AFABC /* HealendarUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = HealendarUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		006371032DEC40DA003AFABC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002863A92DEF5C07003659A3 /* PhotoEditorSDK in Frameworks */,
+				0063714D2DEC641D003AFABC /* FSCalendar in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		006371152DEC40DB003AFABC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0063711F2DEC40DB003AFABC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		006370FD2DEC40DA003AFABC = {
+			isa = PBXGroup;
+			children = (
+				006371082DEC40DA003AFABC /* Healendar */,
+				0063711B2DEC40DB003AFABC /* HealendarTests */,
+				006371252DEC40DB003AFABC /* HealendarUITests */,
+				006371072DEC40DA003AFABC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		006371072DEC40DA003AFABC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				006371062DEC40DA003AFABC /* Healendar.app */,
+				006371182DEC40DB003AFABC /* HealendarTests.xctest */,
+				006371222DEC40DB003AFABC /* HealendarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		006371052DEC40DA003AFABC /* Healendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0063712C2DEC40DB003AFABC /* Build configuration list for PBXNativeTarget "Healendar" */;
+			buildPhases = (
+				006371022DEC40DA003AFABC /* Sources */,
+				006371032DEC40DA003AFABC /* Frameworks */,
+				006371042DEC40DA003AFABC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				006371082DEC40DA003AFABC /* Healendar */,
+			);
+			name = Healendar;
+			packageProductDependencies = (
+				0063714C2DEC641D003AFABC /* FSCalendar */,
+				002863A82DEF5C07003659A3 /* PhotoEditorSDK */,
+			);
+			productName = Healendar;
+			productReference = 006371062DEC40DA003AFABC /* Healendar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		006371172DEC40DB003AFABC /* HealendarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0063712F2DEC40DB003AFABC /* Build configuration list for PBXNativeTarget "HealendarTests" */;
+			buildPhases = (
+				006371142DEC40DB003AFABC /* Sources */,
+				006371152DEC40DB003AFABC /* Frameworks */,
+				006371162DEC40DB003AFABC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0063711A2DEC40DB003AFABC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				0063711B2DEC40DB003AFABC /* HealendarTests */,
+			);
+			name = HealendarTests;
+			packageProductDependencies = (
+			);
+			productName = HealendarTests;
+			productReference = 006371182DEC40DB003AFABC /* HealendarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		006371212DEC40DB003AFABC /* HealendarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 006371322DEC40DB003AFABC /* Build configuration list for PBXNativeTarget "HealendarUITests" */;
+			buildPhases = (
+				0063711E2DEC40DB003AFABC /* Sources */,
+				0063711F2DEC40DB003AFABC /* Frameworks */,
+				006371202DEC40DB003AFABC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				006371242DEC40DB003AFABC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				006371252DEC40DB003AFABC /* HealendarUITests */,
+			);
+			name = HealendarUITests;
+			packageProductDependencies = (
+			);
+			productName = HealendarUITests;
+			productReference = 006371222DEC40DB003AFABC /* HealendarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		006370FE2DEC40DA003AFABC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					006371052DEC40DA003AFABC = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					006371172DEC40DB003AFABC = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 006371052DEC40DA003AFABC;
+					};
+					006371212DEC40DB003AFABC = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 006371052DEC40DA003AFABC;
+					};
+				};
+			};
+			buildConfigurationList = 006371012DEC40DA003AFABC /* Build configuration list for PBXProject "Healendar" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 006370FD2DEC40DA003AFABC;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				006371352DEC414F003AFABC /* XCRemoteSwiftPackageReference "FSCalendar" */,
+				002863A72DEF5C07003659A3 /* XCRemoteSwiftPackageReference "pesdk-ios-build" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 006371072DEC40DA003AFABC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				006371052DEC40DA003AFABC /* Healendar */,
+				006371172DEC40DB003AFABC /* HealendarTests */,
+				006371212DEC40DB003AFABC /* HealendarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		006371042DEC40DA003AFABC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		006371162DEC40DB003AFABC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		006371202DEC40DB003AFABC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		006371022DEC40DA003AFABC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		006371142DEC40DB003AFABC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0063711E2DEC40DB003AFABC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0063711A2DEC40DB003AFABC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 006371052DEC40DA003AFABC /* Healendar */;
+			targetProxy = 006371192DEC40DB003AFABC /* PBXContainerItemProxy */;
+		};
+		006371242DEC40DB003AFABC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 006371052DEC40DA003AFABC /* Healendar */;
+			targetProxy = 006371232DEC40DB003AFABC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0063712A2DEC40DB003AFABC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0063712B2DEC40DB003AFABC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0063712D2DEC40DB003AFABC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Healendar/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "\"사진을 기록에 첨부하기 위해 카메라 접근 권한이 필요합니다.\"";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danpun9.Healendar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0063712E2DEC40DB003AFABC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Healendar/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "\"사진을 기록에 첨부하기 위해 카메라 접근 권한이 필요합니다.\"";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danpun9.Healendar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		006371302DEC40DB003AFABC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danpun9.HealendarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Healendar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Healendar";
+			};
+			name = Debug;
+		};
+		006371312DEC40DB003AFABC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danpun9.HealendarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Healendar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Healendar";
+			};
+			name = Release;
+		};
+		006371332DEC40DB003AFABC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danpun9.HealendarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Healendar;
+			};
+			name = Debug;
+		};
+		006371342DEC40DB003AFABC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danpun9.HealendarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Healendar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		006371012DEC40DA003AFABC /* Build configuration list for PBXProject "Healendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0063712A2DEC40DB003AFABC /* Debug */,
+				0063712B2DEC40DB003AFABC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0063712C2DEC40DB003AFABC /* Build configuration list for PBXNativeTarget "Healendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0063712D2DEC40DB003AFABC /* Debug */,
+				0063712E2DEC40DB003AFABC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0063712F2DEC40DB003AFABC /* Build configuration list for PBXNativeTarget "HealendarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				006371302DEC40DB003AFABC /* Debug */,
+				006371312DEC40DB003AFABC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		006371322DEC40DB003AFABC /* Build configuration list for PBXNativeTarget "HealendarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				006371332DEC40DB003AFABC /* Debug */,
+				006371342DEC40DB003AFABC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		002863A72DEF5C07003659A3 /* XCRemoteSwiftPackageReference "pesdk-ios-build" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/imgly/pesdk-ios-build";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.10.2;
+			};
+		};
+		006371352DEC414F003AFABC /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		002863A82DEF5C07003659A3 /* PhotoEditorSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 002863A72DEF5C07003659A3 /* XCRemoteSwiftPackageReference "pesdk-ios-build" */;
+			productName = PhotoEditorSDK;
+		};
+		0063714C2DEC641D003AFABC /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 006371352DEC414F003AFABC /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 006370FE2DEC40DA003AFABC /* Project object */;
+}
