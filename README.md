@@ -75,7 +75,7 @@ Healendar는 사용자 사진 문서화와 기록 관리를 위한 iOS 앱입니
    - 앨범 리스트에서 앨범을 삭제할 수 있습니다.
 
 ## 파일 구조
-
+```
 Healendar/
 ├── Models/
 │ ├── Album.swift // 앨범 모델
@@ -98,3 +98,4 @@ Healendar/
 │ └── ...
 └── App/
 └── HealendarApp.swift // 앱 엔트리 포인트
+```
