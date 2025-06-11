@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// 현재 앱에서 활성화될 수 있는 시트 종류를 정의하는 열거형
+/// 현재 앱에서 활성화될 수 있는 시트 종류를 정의하는 열거형 (Identifiable, Equatable 준수)
 enum ActiveSheet: Identifiable, Equatable {
   case editor(existing: Record?) // 기록 편집 시트, 기존 기록이 있을 수 있음
   case albumList // 앨범 리스트 시트
@@ -24,16 +24,24 @@ enum ActiveSheet: Identifiable, Equatable {
 
 /// 앱의 메인 뷰
 struct MainView: View {
-  // 앨범 데이터 및 상태 관리
+  // MARK: - Properties
+
+  /// 앨범 데이터 및 상태 관리 객체
   @StateObject var albumViewModel = AlbumViewModel()
-  // 현재 활성화된 시트 상태
+  /// 현재 활성화된 시트 상태
   @State private var activeSheet: ActiveSheet?
-  // 선택된 기록 (달력에서 선택된 기록)
+  /// 선택된 기록 (달력에서 선택된 기록)
   @State private var selectedRecord: Record?
-  // 오늘 기록이 이미 있을 때 경고창 표시 여부
+  /// 오늘 기록이 이미 있을 때 경고창 표시 여부
   @State private var showAlert = false
-  // 오늘 기록이 이미 있을 경우 기존 기록 저장
+  /// 오늘 기록이 이미 있을 경우 기존 기록 저장
   @State private var existingRecord: Record?
+  /// 선택된 날짜 저장 (캘린더에서 날짜 선택 시)
+  @State private var selectedDate: Date?
+  /// 선택된 날짜에 기록이 없을 때 기록 추가 알림 표시 여부
+  @State private var showDateAlert = false
+
+  // MARK: - Body
 
   var body: some View {
     NavigationStack {
@@ -43,9 +51,14 @@ struct MainView: View {
         VStack {
           if let _ = albumViewModel.selectedAlbum {
             // 선택된 앨범이 있으면 캘린더 뷰 표시
-            CalendarView(albumViewModel: albumViewModel, activeSheet: $activeSheet)
-              .frame(maxHeight: .infinity)
-              .ignoresSafeArea(edges: .bottom)
+            CalendarView(
+              albumViewModel: albumViewModel,
+              activeSheet: $activeSheet,
+              selectedDate: $selectedDate,
+              showDateAlert: $showDateAlert
+            )
+            .frame(maxHeight: .infinity)
+            .ignoresSafeArea(edges: .bottom)
           } else {
             // 앨범이 선택되지 않았을 때 안내 텍스트 표시
             Text("앨범을 먼저 선택하세요.")
@@ -83,7 +96,6 @@ struct MainView: View {
         .opacity(albumViewModel.selectedAlbum == nil ? 0.5 : 1.0)
         .padding(.bottom, 20)
       }
-
       // 네비게이션 바 제목 설정 (앨범 이름 또는 기본값)
       .navigationTitle(albumViewModel.selectedAlbum?.name ?? "Healendar")
       .toolbar {
@@ -108,7 +120,6 @@ struct MainView: View {
           }
         }
       }
-
       // 활성화된 시트에 따라 다른 뷰를 시트로 표시
       .sheet(item: $activeSheet) { item in
         switch item {
@@ -123,15 +134,27 @@ struct MainView: View {
             .environmentObject(albumViewModel)
         }
       }
-
       // 오늘 기록이 이미 있을 때 경고창 표시
-      .alert("기존 기록 교체", isPresented: $showAlert) {
+      .alert("기록 수정", isPresented: $showAlert) {
         Button("취소", role: .cancel) {}
-        Button("새로 작성") {
+        Button("수정") {
           activeSheet = .editor(existing: existingRecord)
         }
       } message: {
-        Text("오늘 날짜에 이미 기록이 있습니다. 기존 기록을 새 기록으로 교체하시겠습니까?")
+        Text("오늘 날짜에 이미 기록이 있습니다. 수정하시겠습니까?")
+      }
+    }
+    // 선택된 날짜에 기록이 없을 때 기록 추가 알림 표시
+    .alert("기록 추가", isPresented: $showDateAlert) {
+      Button("취소", role: .cancel) {}
+      Button("추가") {
+        print("추가 버튼 - selectedDate: \(selectedDate)")
+        albumViewModel.selectedDate = selectedDate // 선택된 날짜 저장
+        activeSheet = .editor(existing: nil) // 기록 편집 시트 열기
+      }
+    } message: {
+      if let date = selectedDate {
+        Text("\(date.formatted(date: .abbreviated, time: .omitted))에 기록을 추가하시겠습니까?")
       }
     }
   }
