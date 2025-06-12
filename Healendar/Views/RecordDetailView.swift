@@ -30,6 +30,11 @@ struct RecordDetailView: View {
     .sheet(item: $albumViewModel.selectedTag) { tag in // 태그 검색 시트
       TaggedRecordListView(albumViewModel: albumViewModel, tag: tag)
     }
+    .fullScreenCover(isPresented: $albumViewModel.isPresentingFullScreenImage) { // 크게 보기
+      if let image = albumViewModel.fullScreenImage {
+        FullScreenImageView(image: image)
+      }
+    }
   }
     
   // MARK: - Subviews
@@ -42,13 +47,17 @@ struct RecordDetailView: View {
           .resizable()
           .scaledToFit()
           .frame(height: 300)
+          .onTapGesture {
+            albumViewModel.isPresentingFullScreenImage = true
+            albumViewModel.fullScreenImage = image
+          }
       } else {
         Text("사진 불러오기 실패")
           .frame(height: 300)
       }
     }
   }
-    
+
   /// 태그 목록 (가로 스크롤)
   private var tagListSection: some View {
     ScrollView(.horizontal, showsIndicators: false) {

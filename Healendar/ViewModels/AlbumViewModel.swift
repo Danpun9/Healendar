@@ -1,4 +1,5 @@
 import Foundation
+import SwiftUI
 
 /// 앨범 및 기록 데이터를 관리하는 뷰 모델 (SwiftUI ObservableObject)
 class AlbumViewModel: ObservableObject {
@@ -9,7 +10,9 @@ class AlbumViewModel: ObservableObject {
   @Published var selectedTag: String? = nil // 현재 선택된 태그 (검색용)
   @Published var selectedDate: Date?
   @Published var activeSheet: ActiveSheet?
-    
+  @Published var isPresentingFullScreenImage = false
+  @Published var fullScreenImage: UIImage?
+
   // MARK: - Private Properties
 
   private let albumsFile = "albums.json" // 앨범 데이터 저장 파일명
